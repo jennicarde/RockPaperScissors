@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600');
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: white;
+    color: #3c3c3c;
+    font-family: 'Poppins', sans-serif;
+    ;
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-color: white;
+    width: 100%;
+    min-height: 350px;
+    min-height: 35rem;
+    padding-top: 80px;
+}
+.header {
+    background-color: #48c9b0;
+    border: 1px solid #48c9b0;
+    border-bottom: 2px solid gainsboro;
+    position: relative;
+    width: 100%;
+    height: 110px;
+    height: 11rem;
+}
+.header h1 {
+    color: #34495e;
+    margin: 20px auto;
+}
+h1 span.rock {
+    font-size: 48px;
+    font-size: 4.8rem;
+}
+h1 span.paper {
+    font-size: 48px;
+    font-size: 4.8rem;
+}
+h1 span.scissors {
+    font-size: 48px;
+    font-size: 4.8rem;
+}
+.container {
+    position: relative;
+    width: 960px;
+    width: 96rem;
+    margin: 0 auto;
+    padding: 0;
+}
+.content {
+    width: 630px;
+    width: 63rem;
+    float: left;
+}
+.aside {
+    width: 330px;
+    width: 33rem;
+    float: right;
+}
+/*.footer {
+    background-color: #efefef;
+    color: #777777;
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+    width: 100%;
+    min-height: 100px;
+    min-height: 10rem;
+    height: auto;
+    padding: 20px 0;
+}
+.footer h2 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+.footer address {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-style: normal;
+}*/
+button.play {
+    border-radius: 10px;
+    border: 4px solid white;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 175px;
+    width: 17.5rem;
+    height: 175px;
+    height: 17.5rem;
+    padding: 5px;
+    margin-right: 30px;
+}
+/*button .play {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 175px;
+  width: 17.5rem;
+  height: 175px;
+  height: 17.5rem;
+  padding: 5px;
+  margin-right: 30px;
+}*/
+
+button.play.rock {
+    background: #efefef url("https://images.unsplash.com/photo-1469006117505-78ac7334ccf2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=486278fef316ebdc5c9434b0c9309637") no-repeat;
+    background-size: cover;
+}
+button.play.paper {
+    background: #efefef url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=2e481631f9841642ba61e30d6c41f7ff") no-repeat;
+    background-size: 175px 175px;
+}
+button.play.scissors {
+    background: #efefef url("https://pixabay.com/static/uploads/photo/2016/07/22/02/59/scissors-1534065_960_720.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+button.play:hover {
+    border: 4px solid #5dade2;
+}
+button#reset {
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #fbfcfc;
+    background-color: #34495e;
+    border-radius: 10px;
+    width: 120px;
+    width: 12rem;
+    height: 35px;
+    height: 3.5rem;
+    line-height: 1em;
+    float: right;
+    margin-right: 105px;
+    border: 0;
+}
+/*button #reset {
+  width: 120px;
+  width: 12rem;
+  height: 35px;
+  height: 3.5rem;
+  line-height: 1em;
+  float: right;
+  margin-right: 105px;
+  border: 0;
+}*/
+
+button#reset:hover {
+    background-color: #2c3e50;
+}
+h2#results {
+    color: #444444;
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+p {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+.scorebox {
+    background-color: #efefef;
+    border: 4px solid #efefef;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 195px;
+    width: 19.5rem;
+    height: 175px;
+    height: 17.5rem;
+    padding: 5px;
+    margin: 0 auto 15px auto;
+}
+.scorebox h2 {
+    color: #777777;
+    font-weight: 600;
+    font-size: 24px;
+    font-size: 2.4rem;
+    margin: 0 0 10px 10px;
+}
+span#loses,
+span#wins {
+    font-size: 48px;
+    font-size: 4.8rem;
+    color: #5dade2;
+}
+.score-divider span {
+    font-size: 40px;
+    font-size: 4rem;
+    color: #5dade2;
+    font-weight: 200;
+}
+div.score-num,
+div.score-divider {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #777777;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+}
+div.score-num {
+    width: 40%;
+}
+div.score-divider {
+    width: 20%;
+}
+/*.score-num,
+.score-divider {
+  float: left;
+}
+.score-num {
+  width: 40%;
+}
+.score-divider {
+  width: 20%;
+}*/
